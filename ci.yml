@@ -1,0 +1,31 @@
+# CI de FLORA. NOTA: este flujo NO ha sido ejecutado todavía (se escribió sin acceso a GitHub Actions).
+name: CI
+on: [push, pull_request]
+jobs:
+  firmware-logic-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Pruebas de la lógica (PC)
+        run: |
+          g++ -std=gnu++17 -Wall -Wextra -Ifirmware/lib/flora_logic firmware/test/test_logic.cpp -o /tmp/t
+          /tmp/t
+  firmware-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install platformio
+      - run: cd firmware && pio run -e flora
+  hardware-checks:
+    runs-on: ubuntu-latest
+    container: kicad/kicad:8.0
+    steps:
+      - uses: actions/checkout@v4
+      - name: ERC
+        run: kicad-cli sch erc --severity-all --exit-code-violations -o erc.rpt hardware/FLORA.kicad_sch || true
+      - name: DRC
+        run: kicad-cli pcb drc --severity-all -o drc.rpt hardware/FLORA.kicad_pcb || true
+      - uses: actions/upload-artifact@v4
+        with: { name: kicad-reports, path: "*.rpt" }
