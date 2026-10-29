@@ -1,0 +1,20 @@
+Pin modulo (U1),Funcion GPIO,Red,Notas
+1,3V3,+3V3,
+2,EN,EN,RC 10k+1uF + pulsador RESET (SW2)
+3,GPIO4,SOIL_PWR_N,ACTIVO BAJO; gate del P-MOSFET Q1; pull-up 10k
+4,GPIO5,LED_GRN,ACTIVO BAJO (anodo a 3V3)
+5,GPIO6,I2C_SDA,"I2C; pull-up 4.7k; SHT40 0x44, TSL25911 0x29, OLED 0x3C"
+6,GPIO7,I2C_SCL,I2C; pull-up 4.7k
+7,GPIO8,GPIO8_STRAP,Strapping: pull-up 10k (necesario para modo descarga); sin uso
+8,GPIO9,BTN_USER,Boton a GND; pull-up 10k; pin de strapping BOOT (GPIO9)
+9,GND,GND,
+10,GPIO10,LED_AMB,ACTIVO BAJO (anodo a 3V3)
+11,GPIO20 (RXD),UART_RX,UART0 RXD en pad de prueba TP9
+12,GPIO21 (TXD),UART_TX,UART0 TXD en pad de prueba TP8
+13,GPIO18,USB_DN,USB D- nativo (GPIO18)
+14,GPIO19,USB_DP,USB D+ nativo (GPIO19)
+15,GPIO3,LED_RED,ACTIVO BAJO (anodo a 3V3)
+16,GPIO2,GPIO2_STRAP,Strapping: pull-up 10k; sin uso
+17,GPIO1,BUZZER_PWM,PWM ~4 kHz hacia gate de Q2 (2N7002)
+18,GPIO0,SOIL_ADC,ADC1_CH0; RC 1k+100nF; pull-down 470k (deteccion de sonda desconectada)
+19,GND (EPAD),GND,

@@ -1,0 +1,43 @@
+Referencias,Cantidad,Valor / descripcion,Huella KiCad,Fabricante / MPN (SIN verificar stock),Alternativas compatibles (a verificar)
+U1,1,ESP32-C3-WROOM-02-N4,RF_Module:ESP32-C3-WROOM-02,Espressif ESP32-C3-WROOM-02-N4,"ESP32-C3-WROOM-02U-N4 (conector u.FL, otra huella de antena); ESP32-C3-MINI-1 (otra huella, no incluida en KiCad 7)"
+U2,1,SHT40-AD1B,Sensor_Humidity:Sensirion_DFN-4_1.5x1.5mm_P0.8mm_SHT4x_NoCentralPad,Sensirion SHT40-AD1B-R2,"SHT41/SHT45 (misma huella DFN-4, mayor precision); SHT31-DIS (otra huella)"
+U3,1,TSL25911FN,OptoDevice:AMS_TSL25911FN,ams-OSRAM TSL25911FN,"TSL2591 (mismo mapa de registros, otra huella); BH1750FVI (otra huella WSOF6I, direccion 0x23)"
+U4,1,AP2112K-3.3,Package_TO_SOT_SMD:SOT-23-5,Diodes Inc. AP2112K-3.3TRG1,ME6211C33 / XC6220B331 / MIC5504-3.3 (SOT-23-5; verificar patillaje)
+U5,1,USBLC6-2SC6,Package_TO_SOT_SMD:SOT-23-6,STMicroelectronics USBLC6-2SC6,PRTR5V0U2X (otra huella SOT-143B)
+J1,1,USB-C (5V + USB 2.0),Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal,GCT USB4105-GF-A,
+F1,1,PTC 500mA hold,Fuse:Fuse_1206_3216Metric,Bourns MF-MSMF050-2 (o equivalente),
+D1,1,TVS 5V,Diode_SMD:D_SOD-123F,Littelfuse SMF5.0A (verificar polaridad/tension),
+Q1,1,AO3401A (P-MOSFET),Package_TO_SOT_SMD:SOT-23,Alpha&Omega AO3401A,"Si2301 / DMG3415U (SOT-23, G-S-D igual: verificar)"
+Q2,1,2N7002 (N-MOSFET),Package_TO_SOT_SMD:SOT-23,2N7002 (onsemi/Nexperia),BSS138 / Si2302 (SOT-23)
+BZ1,1,PKMCS0909E4000-R1 (piezo),Buzzer_Beeper:Buzzer_Murata_PKMCS0909E,Murata PKMCS0909E4000-R1,Zumbador piezo SMD 9x9 mm de resonancia ~4 kHz equivalente; o no montar (BOM opcional)
+J2,1,Sonda suelo (JST PH 3p: GND VCC AOUT),Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical,JST B3B-PH-K-S,
+J3,1,OLED I2C (GND VCC SCL SDA),Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical,Socket hembra 1x4 2.54mm,
+SW1,1,USUARIO,Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2,C&K KMR2 (o equivalente),
+SW2,1,RESET,Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2,C&K KMR2 (o equivalente),
+D2,1,ROJO,LED_SMD:LED_0603_1608Metric,LED 0603 rojo,
+D3,1,VERDE,LED_SMD:LED_0603_1608Metric,LED 0603 verde,
+D4,1,AMBAR,LED_SMD:LED_0603_1608Metric,LED 0603 ambar,
+R1 R2,2,5.1k,Resistor_SMD:R_0603_1608Metric,Yageo RC0603FR-075K1L,
+R3 R4,2,4.7k,Resistor_SMD:R_0603_1608Metric,Yageo RC0603FR-074K7L,
+R5 R6 R7 R8 R9,5,10k,Resistor_SMD:R_0603_1608Metric,Yageo RC0603FR-0710KL,
+R10 R11 R12,3,330,Resistor_SMD:R_0603_1608Metric,Yageo RC0603FR-07330RL,
+R13,1,100,Resistor_SMD:R_0603_1608Metric,Yageo RC0603FR-07100RL,
+R14,1,100k,Resistor_SMD:R_0603_1608Metric,Yageo RC0603FR-07100KL,
+R15,1,1k,Resistor_SMD:R_0603_1608Metric,Yageo RC0603FR-071KL,
+R16,1,470k,Resistor_SMD:R_0603_1608Metric,Yageo RC0603FR-07470KL,
+C1 C2,2,10uF/10V,Capacitor_SMD:C_0805_2012Metric,Samsung CL21A106KPFNNNE,
+C3 C4 C5 C7 C8 C9,6,100nF,Capacitor_SMD:C_0603_1608Metric,Samsung CL10B104KB8NNNC,
+C6,1,1uF,Capacitor_SMD:C_0603_1608Metric,Samsung CL10A105KB8NNNC,
+TP1,1,3V3,TestPoint:TestPoint_Pad_D1.5mm,Pad de prueba,
+TP2,1,GND,TestPoint:TestPoint_Pad_D1.5mm,Pad de prueba,
+TP3,1,VBUS,TestPoint:TestPoint_Pad_D1.5mm,Pad de prueba,
+TP4,1,SDA,TestPoint:TestPoint_Pad_D1.5mm,Pad de prueba,
+TP5,1,SCL,TestPoint:TestPoint_Pad_D1.5mm,Pad de prueba,
+TP6,1,SOIL,TestPoint:TestPoint_Pad_D1.5mm,Pad de prueba,
+TP7,1,EN,TestPoint:TestPoint_Pad_D1.5mm,Pad de prueba,
+TP8,1,TX,TestPoint:TestPoint_Pad_D1.5mm,Pad de prueba,
+TP9,1,RX,TestPoint:TestPoint_Pad_D1.5mm,Pad de prueba,
+TP10,1,BOOT,TestPoint:TestPoint_Pad_D1.5mm,Pad de prueba,
+
+NO EN PCB (comprar aparte),1,"Modulo OLED SSD1306 0.96in I2C 128x64, orden de pines GND-VCC-SCL-SDA",Cabezal macho 4 pines,Generico (verificar orden de pines VCC/GND: varia segun fabricante),
+NO EN PCB (comprar aparte),1,Sonda de humedad de suelo capacitiva (tipo v1.2) con cable JST-PH 3 pines GND-VCC-AOUT,-,Generico (calidad muy variable; ver testing_plan.md),
