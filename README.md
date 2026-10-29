@@ -1,4 +1,4 @@
-# FLORA — Smart Plant Companion 🌸
+# FLORA — Smart Plant Companion 
 
 Monitor de plantas con **ESP32-C3**, en una **PCB con forma de flor** (5 pétalos, ~56,5 × 53 mm, 2 capas).
 Mide humedad del suelo (sonda capacitiva), temperatura y humedad del aire (SHT40) y luz (TSL25911), y lo muestra en una pantalla OLED con LEDs de estado y alerta sonora opcional. Alimentación por USB-C (5 V).
@@ -31,7 +31,7 @@ Humedad de suelo calibrable (seco/húmedo) · temperatura y HR ambiente · luz �
 | Gerbers abiertos con un lector independiente (gerbonara) y revisados visualmente | ✅ |
 | Lógica del firmware (pruebas en PC con g++) | ✅ |
 | Compilación del firmware para ESP32-C3 | ❌ **no realizada** (hacerla con `pio run` o con el CI) |
-| Contraste de pines con hojas de datos | ✅ ESP32-C3-WROOM-02 y TSL25911FN · ⚠️ resto solo con símbolos oficiales de KiCad |
+| Contraste de pines con hojas de datos | ✅ ESP32-C3-WROOM-02 y TSL25911FN ·  resto solo con símbolos oficiales de KiCad |
 | Fabricación, ensamblaje, pruebas físicas | ❌ pendientes (ver `documentation/testing_plan.md`) |
 
 Lista completa de limitaciones: `documentation/design_review.md`.
