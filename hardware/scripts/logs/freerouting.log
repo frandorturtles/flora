@@ -1,0 +1,43 @@
+2026-10-26 09:19:09.916 [main] INFO  Freerouting v1.9.0 (build-date: 2023-10-30)
+2026-10-26 09:19:10.052 [main] ERROR null
+java.awt.HeadlessException: null
+	at sun.awt.HeadlessToolkit.getScreenSize(HeadlessToolkit.java:186) ~[?:?]
+	at app.freerouting.gui.MainApplication.main(MainApplication.java:269) ~[freerouting.jar:unspecified]
+2026-10-26 09:19:10.077 [main] ERROR Exception in FRAnalytics.trackAnonymousAction: Cannot invoke "app.freerouting.management.SegmentClient.track(String, String, String, app.freerouting.management.segment.Properties)" because "app.freerouting.management.FRAnalytics.analytics" is null
+java.lang.NullPointerException: Cannot invoke "app.freerouting.management.SegmentClient.track(String, String, String, app.freerouting.management.segment.Properties)" because "app.freerouting.management.FRAnalytics.analytics" is null
+	at app.freerouting.management.FRAnalytics.trackAnonymousAction(FRAnalytics.java:139) [freerouting.jar:unspecified]
+	at app.freerouting.management.FRAnalytics.exceptionThrown(FRAnalytics.java:323) [freerouting.jar:unspecified]
+	at app.freerouting.gui.DefaultExceptionHandler.handleException(DefaultExceptionHandler.java:15) [freerouting.jar:unspecified]
+	at app.freerouting.gui.DefaultExceptionHandler.uncaughtException(DefaultExceptionHandler.java:29) [freerouting.jar:unspecified]
+	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:695) [?:?]
+	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:690) [?:?]
+	at java.lang.Thread.dispatchUncaughtException(Thread.java:2902) [?:?]
+2026-10-26 09:19:25.743 [main] INFO  Freerouting v1.9.0 (build-date: 2023-10-30)
+2026-10-26 09:19:25.817 [main] INFO  Settings were loaded from freerouting.json
+2026-10-26 09:19:25.826 [main] ERROR 
+No X11 DISPLAY variable was set,
+or no headful library support was found,
+but this program performed an operation which requires it.
+java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+or no headful library support was found,
+but this program performed an operation which requires it.
+	at sun.awt.HeadlessToolkit.getScreenSize(HeadlessToolkit.java:186) ~[?:?]
+	at app.freerouting.gui.MainApplication.main(MainApplication.java:269) ~[freerouting.jar:unspecified]
+2026-10-26 09:19:25.852 [main] ERROR Exception in FRAnalytics.trackAnonymousAction: Cannot invoke "app.freerouting.management.SegmentClient.track(String, String, String, app.freerouting.management.segment.Properties)" because "app.freerouting.management.FRAnalytics.analytics" is null
+java.lang.NullPointerException: Cannot invoke "app.freerouting.management.SegmentClient.track(String, String, String, app.freerouting.management.segment.Properties)" because "app.freerouting.management.FRAnalytics.analytics" is null
+	at app.freerouting.management.FRAnalytics.trackAnonymousAction(FRAnalytics.java:139) [freerouting.jar:unspecified]
+	at app.freerouting.management.FRAnalytics.exceptionThrown(FRAnalytics.java:323) [freerouting.jar:unspecified]
+	at app.freerouting.gui.DefaultExceptionHandler.handleException(DefaultExceptionHandler.java:15) [freerouting.jar:unspecified]
+	at app.freerouting.gui.DefaultExceptionHandler.uncaughtException(DefaultExceptionHandler.java:29) [freerouting.jar:unspecified]
+	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:695) [?:?]
+	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:690) [?:?]
+	at java.lang.Thread.dispatchUncaughtException(Thread.java:2902) [?:?]
+2026-10-26 09:19:38.191 [main] INFO  Freerouting v1.9.0 (build-date: 2023-10-30)
+2026-10-26 09:19:38.276 [main] INFO  Settings were loaded from freerouting.json
+2026-10-26 09:19:39.322 [main] INFO  Opening '/tmp/flora.dsn'...
+2026-10-26 09:20:02.867 [Thread-23] INFO  Starting auto-routing...
+2026-10-26 09:25:24.697 [main] INFO  Freerouting v1.9.0 (build-date: 2023-10-30)
+2026-10-26 09:25:24.793 [main] INFO  Settings were loaded from freerouting.json
+2026-10-26 09:25:25.834 [main] INFO  Opening '/tmp/flora.dsn'...
+2026-10-26 09:25:49.235 [Thread-23] INFO  Starting auto-routing...
